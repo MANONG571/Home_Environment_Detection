@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\led.o"
+".\objects\dht11.o"
+".\objects\key.o"
+".\objects\usart.o"
+".\objects\timer.o"
+".\objects\adc_ldr.o"
+".\objects\display.o"
+".\objects\sr04.o"
+".\objects\beep_init.o"
+".\objects\misc.o"
+".\objects\stm32f4xx_adc.o"
+".\objects\stm32f4xx_exti.o"
+".\objects\stm32f4xx_gpio.o"
+".\objects\stm32f4xx_rcc.o"
+".\objects\stm32f4xx_syscfg.o"
+".\objects\stm32f4xx_tim.o"
+".\objects\stm32f4xx_usart.o"
+".\objects\startup_stm32f401xx.o"
+".\objects\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter ".\Objects\project.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\project.map" -o .\Objects\project.axf
